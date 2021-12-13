@@ -1,18 +1,14 @@
-from typing import Union
-
-from task_4_3_get_column_values import get_column_values
+# todo импортировать функцию из прошлого
 
 
 FILENAME = "Marketing_Spend.csv"
 
 
-def get_min_ofline_spend(filename: str) -> Union[int, float]:
-    ofline_spend_values = get_column_values(filename, "Offline Spend")
+def get_min_ofline_spend(filename):  # todo добавить аннотацию типов
+    ofline_spend_values = ...  # todo получить столбец со значениями
 
     min_value = ofline_spend_values[0]
-    for current_value in ofline_spend_values:
-        if current_value < min_value:
-            min_value = current_value
+    # todo найти минимальную сумму
 
     return min_value
 
