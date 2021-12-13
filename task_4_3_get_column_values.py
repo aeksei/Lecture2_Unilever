@@ -1,15 +1,21 @@
+"""
+Аннотация типов
+Методы списка index, append
+Метод split как отдельная функция (принцип DRY)
+"""
+
 FILENAME = "Marketing_Spend.csv"
 
 
-def get_column_values(filename: str, column: str) -> list:
+def get_column_values(filename, column):  # todo добавить аннотацию типов
+    """Вернуть список значений указанного столбца"""
     with open(filename) as f:
-        colimns_list = f.readline().split(",")
-        column_index = colimns_list.index(column)
-        values = []
-        for line in f:
-            values.append(line.split(",")[column_index])
+        # todo считать строку со столбцами и разбить их
 
-    return values
+        # todo получить индекс искомого столбца
+        
+        # todo считать все значения столбца в список
+        ...
 
 
 if __name__ == "__main__":
